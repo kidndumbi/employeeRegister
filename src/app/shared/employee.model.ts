@@ -1,5 +1,5 @@
 export interface Employee {
-    $key: string;
+    $key?: string;
     name: string;
     position:string;
     office:string;

@@ -1,3 +1,6 @@
-<p>
-  employee works!
-</p>
+<form #empForm="ngForm">
+   <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" placeholder="Full name" [(ngModel)]="newemployee.name" class="form-control" #name="ngModel"/>
+   </div>
+</form>

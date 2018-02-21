@@ -1,3 +1,4 @@
+import { Employee } from './../../shared/employee.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeeComponent implements OnInit {
 
-  constructor() { }
+  newemployee: Employee;
+
+  constructor() { 
+    this.newemployee = {
+      name: "",
+      position:"",
+      office:"",
+      salary:null
+    }
+  }
 
   ngOnInit() {
   }
